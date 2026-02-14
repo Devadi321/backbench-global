@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "netlify-cli": "^17.2.2"
+  },
+  "_npx": {
+    "packages": [
+      "netlify-cli@17.2.2"
+    ]
+  }
+}

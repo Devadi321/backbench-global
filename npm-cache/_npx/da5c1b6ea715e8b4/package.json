@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "netlify-cli": "^23.15.1"
+  },
+  "_npx": {
+    "packages": [
+      "netlify-cli"
+    ]
+  }
+}

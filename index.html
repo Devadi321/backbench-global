@@ -190,7 +190,7 @@
         }
 
         /* Floating Action Buttons */
-        .fab-container {
+        .floating-btn-container {
             position: fixed;
             bottom: 30px;
             right: 30px;
@@ -200,7 +200,7 @@
             z-index: 999;
         }
 
-        .fab {
+        .floating-btn {
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -216,7 +216,7 @@
             position: relative;
         }
 
-        .fab::before {
+        .floating-btn::before {
             content: attr(data-tooltip);
             position: absolute;
             right: 70px;
@@ -231,35 +231,35 @@
             transition: all 0.3s;
         }
 
-        .fab:hover::before {
+        .floating-btn:hover::before {
             opacity: 1;
             right: 75px;
         }
 
-        .fab-whatsapp {
+        .btn-whatsapp {
             background: #25D366;
         }
 
-        .fab-whatsapp:hover {
+        .btn-whatsapp:hover {
             transform: scale(1.1);
             box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
         }
 
-        .fab-call {
+        .btn-call {
             background: var(--primary);
         }
 
-        .fab-call:hover {
+        .btn-call:hover {
             transform: scale(1.1);
             box-shadow: 0 8px 30px rgba(26, 26, 46, 0.5);
         }
 
-        .fab-scroll {
+        .btn-scroll {
             background: var(--gold);
             color: var(--primary);
         }
 
-        .fab-scroll:hover {
+        .btn-scroll:hover {
             transform: scale(1.1);
         }
 
@@ -1271,14 +1271,15 @@
 
 
     <!-- Floating Action Buttons -->
-    <div class="fab-container">
-        <a href="https://wa.me/917025709354" class="fab fab-whatsapp" data-tooltip="Chat on WhatsApp" target="_blank">
+    <div class="floating-btn-container">
+        <a href="https://wa.me/917025709354" class="floating-btn btn-whatsapp" data-tooltip="Chat on WhatsApp"
+            target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="tel:+917025709354" class="fab fab-call" data-tooltip="Call Us">
+        <a href="tel:+917025709354" class="floating-btn btn-call" data-tooltip="Call Us">
             <i class="fas fa-phone"></i>
         </a>
-        <button class="fab fab-scroll" onclick="scrollToTop()" data-tooltip="Scroll to Top">
+        <button class="floating-btn btn-scroll" onclick="scrollToTop()" data-tooltip="Scroll to Top">
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>
@@ -1287,7 +1288,7 @@
     <nav>
         <div class="logo">
             <img src="logo.png" alt="Back Bench Global Academy" class="logo-img">
-            <span>BACK BENCH</span>
+            <span>BACK BENCH GLOBAL</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -1623,7 +1624,7 @@
             <div class="footer-brand">
                 <div class="logo">
                     <img src="logo.png" alt="Back Bench Global Academy" class="logo-img">
-                    <span>BACK BENCH</span>
+                    <span>BACK BENCH GLOBAL</span>
                 </div>
                 <p>Your trusted partner for academic excellence and professional tax consultation since 2021.</p>
                 <div class="footer-social">

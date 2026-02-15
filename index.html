@@ -1099,6 +1099,15 @@
             color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
             transition: all 0.3s;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .footer-links a i {
+            min-width: 20px;
+            margin-top: 5px;
+            text-align: center;
         }
 
         .footer-links a:hover {
@@ -1183,12 +1192,20 @@
                 grid-template-columns: 1fr;
             }
 
-            .fab-container {
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .logo span {
+                white-space: nowrap;
+            }
+
+            .floating-btn-container {
                 bottom: 20px;
                 right: 20px;
             }
 
-            .fab {
+            .floating-btn {
                 width: 55px;
                 height: 55px;
             }
@@ -1259,7 +1276,7 @@
         }
 
         .logo-img {
-            height: 50px;
+            height: 80px;
             width: auto;
             object-fit: contain;
         }
@@ -1287,8 +1304,7 @@
     <!-- Navigation -->
     <nav>
         <div class="logo">
-            <img src="logo.png" alt="Back Bench Global Academy" class="logo-img">
-            <span>BACK BENCH GLOBAL</span>
+            <img src="logo-removebg-preview.png" alt="Back Bench Global Academy" class="logo-img">
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -1338,7 +1354,7 @@
                         <p>Years Experience</p>
                     </div>
                     <div class="stat-item">
-                        <h3>500+</h3>
+                        <h3>1000+</h3>
                         <p>Students</p>
                     </div>
                     <div class="stat-item">
@@ -1353,7 +1369,7 @@
                         <div class="avatar">C</div>
                         <div class="avatar">+</div>
                     </div>
-                    <p>Join 500+ satisfied clients!</p>
+                    <p>Join 1000+ satisfied clients!</p>
                 </div>
             </div>
         </div>
@@ -1366,7 +1382,7 @@
             <p>Years Experience</p>
         </div>
         <div class="stat-box fade-in">
-            <h2>500+</h2>
+            <h2>1000+</h2>
             <p>Students</p>
         </div>
         <div class="stat-box fade-in">
@@ -1392,6 +1408,8 @@
                     businesses navigate complex tax regulations.</p>
                 <p>Our team of experienced professionals provides personalized guidance tailored to your unique needs,
                     ensuring the best possible outcomes for every client.</p>
+                <p>We provide online classes across India, all GCC countries, United Kingdom, Africa, New Zealand,
+                    Australia, and more.</p>
                 <div class="about-features">
                     <div class="about-feature">
                         <i class="fas fa-check-circle"></i>
@@ -1458,6 +1476,38 @@
                 <h3>Career Counseling</h3>
                 <p>Professional career guidance and counseling services to help you make informed decisions about your
                     future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses" style="padding: 6rem 5%; background: var(--light-bg);">
+        <div class="section-header">
+            <span>Our Curriculum</span>
+            <h2>Courses Offered</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Syllabus</h3>
+                <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8;">
+                    <li>IGCSE, GCSE</li>
+                    <li>CBSE, ICSE</li>
+                    <li>State Syllabus</li>
+                </ul>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>Competitive Exams</h3>
+                <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8;">
+                    <li>PSC, SSC, UPSC, Banking</li>
+                    <li>CA, CMA, ACCA</li>
+                    <li>CMA US</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -1537,11 +1587,32 @@
         <div class="contact-grid">
             <div class="contact-card fade-in">
                 <div class="contact-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="contact-info">
+                    <h4>Founder</h4>
+                    <p><strong>CMA ABDUL JASEEL</strong></p>
+                </div>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="contact-info">
+                    <h4>Managing Director</h4>
+                    <p><strong>NAUSHIDA TK</strong><br>
+                        <a href="mailto:Naushidat@gmail.com"
+                            style="color: inherit; text-decoration: none;">Naushidat@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="contact-info">
-                    <h4>Address</h4>
-                    <p>Meeta Palace Building<br>Vennikulam, India</p>
+                    <h4>Offline Campuses</h4>
+                    <p>Thiruvalla • Vennikulam<br>Paduthodu • Chungappara</p>
                 </div>
             </div>
             <div class="contact-card fade-in">
@@ -1619,14 +1690,12 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="logo">
-                    <img src="logo.png" alt="Back Bench Global Academy" class="logo-img">
-                    <span>BACK BENCH GLOBAL</span>
+                    <img src="logo-removebg-preview.png" alt="Back Bench Global Academy" class="logo-img">
                 </div>
                 <p>Your trusted partner for academic excellence and professional tax consultation since 2021.</p>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/backbenchglobal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" title="@backbenchglobal"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/917025709354"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
